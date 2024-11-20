@@ -44,7 +44,6 @@ body {
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
     display: flex;
     flex-direction: column;
-    gap: 20px;
     padding: 20px;
     transition: left 0.3s ease-in-out;
 }
@@ -73,6 +72,7 @@ body {
     background-color: #ccc;
 }
 
+/* 調整收回按鈕位置 */
 .close-btn {
     align-self: flex-start;
     font-size: 30px;
@@ -80,6 +80,8 @@ body {
     border: none;
     color: #455264;
     cursor: pointer;
+    margin-left: 0; /* 靠左對齊 */
+    margin-bottom: 20px; /* 與下方按鈕保持間距 */
 }
 
 /* 主要內容 */
@@ -87,7 +89,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 30px;
+    margin-top: 60px; /* 整體內容往下移 */
 }
 
 .image-box {
@@ -97,7 +99,8 @@ body {
     background-color: #ffffff;
     border-radius: 10px;
     overflow: hidden;
-    margin-bottom: 20px;
+    margin-top: 50px; /* 圖片框下移 */
+    margin-bottom: 30px; /* 與按鈕保持間距 */
 }
 
 .content-btn {
@@ -110,7 +113,7 @@ body {
     font-size: 40px; /* 字體放大 */
     font-weight: bold;
     border-radius: 10px;
-    margin: 15px 0; /* 增加按鈕間距 */
+    margin: 20px 0; /* 增加按鈕間距 */
     cursor: pointer;
     transition: background-color 0.2s ease;
 }
