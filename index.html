@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>主畫面</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- 頂部標題區 -->
+    <div class="top-banner">
+        <button class="menu-btn">≡</button>
+        <h1 class="main-title">AI羽球教練</h1>
+    </div>
+
+    <!-- 彈跳視窗 -->
+    <div class="sidebar" id="sidebar">
+        <button class="close-btn">↽</button>
+        <ul class="sidebar-menu">
+            <li><a href="index.html">主頁</a></li>
+            <hr>
+            <li><a href="member.html">會員</a></li>
+            <hr>
+            <li><a href="about.html">介紹</a></li>
+            <hr>
+            <li><a href="logout.html">登出</a></li>
+        </ul>
+    </div>
+
+    <!-- 主要內容 -->
+    <div class="content">
+        <div class="image-box">
+            <img src="https://st2.depositphotos.com/4112313/9124/v/600/depositphotos_91244172-stock-illustration-polygonal-professional-badminton-player-on.jpg" alt="羽球相關圖片">
+        </div>
+        <button class="content-btn" onclick="window.location.href='teach.html'">羽球擊球動作教學</button>
+        <button class="content-btn" onclick="window.location.href='detect.html'">羽球動作偵測</button>
+        <button class="content-btn" onclick="window.location.href='record.html'">動作偵測紀錄</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
