@@ -48,15 +48,26 @@ body {
     transition: left 0.3s ease-in-out;
 }
 
+/* 彈跳視窗的文字按鈕 */
 .sidebar-menu {
     list-style: none;
     padding: 0;
     margin: 0;
     font-weight: bold;
+    display: flex;
+    flex-direction: column;  /* 按鈕垂直排列 */
+    gap: 20px; /* 按鈕之間的間距 */
+    flex-grow: 1;
+    justify-content: flex-start; /* 從上方開始排列 */
+    margin-top: 20px; /* 與上方有些間距 */
 }
 
 .sidebar-menu li {
-    margin-bottom: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center; /* 按鈕居中 */
+    align-items: center;
+    position: relative;
 }
 
 .sidebar-menu a {
@@ -64,12 +75,19 @@ body {
     color: #455264;
     font-size: 18px;
     font-weight: bold;
+    display: block;
+    padding: 10px 0;
+    width: 100%;
+    text-align: center; /* 讓文字按鈕居中 */
 }
 
+/* 橫線 */
 .sidebar-menu hr {
     border: 0;
     height: 1px;
     background-color: #ccc;
+    width: 100%;
+    margin-top: 10px; /* 橫線和按鈕之間有些距離 */
 }
 
 /* 調整收回按鈕位置 */
@@ -80,7 +98,7 @@ body {
     border: none;
     color: #455264;
     cursor: pointer;
-    margin-left: -2; /* 靠左對齊 */
+    margin-left: 0; /* 靠左對齊 */
     margin-bottom: 20px; /* 與下方按鈕保持間距 */
 }
 
