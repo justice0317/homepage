@@ -99,7 +99,7 @@ body {
     border: none;
     color: #455264;
     cursor: pointer;
-    margin-left: 0; /* 靠左對齊 */
+    margin-left: -20; /* 靠左對齊 */
     margin-bottom: 20px; /* 與下方按鈕保持間距 */
 }
 
